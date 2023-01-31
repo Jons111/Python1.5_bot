@@ -1,6 +1,6 @@
 from aiogram import types
 from aiogram.types import InputFile
-import requests
+ 
 from loader import dp,bot
 
 
