@@ -4,9 +4,10 @@ from environs import Env
 env = Env()
 env.read_env()
 
-# .env fayl ichidan quyidagilarni o'qiymiz
-BOT_TOKEN = '5406652340:AAFwewyBxfdkrTs6U_6jth0oQL5ogEj3jWQ'  # Bot toekn
-ADMINS = '1892438581'  # adminlar ro'yxati
-IP = "ip"  # Xosting ip manzili
+import os
+
+BOT_TOKEN = str(os.environ.get('BOT_TOKEN'))
+ADMINS = list(os.environ.get('ADMINS'))
+IP = os.environ.get('ip')
 
 kanallar = ['@sinov003','@sinov0033']
